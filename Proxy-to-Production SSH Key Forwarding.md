@@ -16,17 +16,20 @@ This method involves using the `ssh-copy-id` command to automate the process of 
 This method involves manually copying your public key and appending it to the ~/.ssh/authorized_keys file on the production server.
 
 1.On your proxy server, open a terminal and display the contents of your public key using the cat command:
-```cat ~/.ssh/id_rsa.pub
+```
+ cat ~/.ssh/id_rsa.pub
 ```
 
 2.Copy the output, which represents your public key.
 
 3.SSH into the production server:
-```ssh new_username@production_server_ip
+```
+ ssh new_username@production_server_ip
 ```
 
 4.Once logged in to the production server, use a text editor to open the ~/.ssh/authorized_keys file (create it if it doesn't exist):
-```vi ~/.ssh/authorized_keys
+```
+ vi ~/.ssh/authorized_keys
 ```
 
 5.In the text editor, paste the public key you copied from the proxy server into the ~/.ssh/authorized_keys file.
