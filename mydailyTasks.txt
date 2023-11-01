@@ -4,3 +4,9 @@
 1. creating the files and directories in the servers based on the requirement.
 2. Modifications of a files and directory permissions 
 3. Insatlling the packages in the servers requested by developers etc.
+
+when manager asks like this :venkat can you create your keys and copy to me ?
+
+you need to do this two steps:
+1. generate keys using a command "ssh-keygen -t rsa -f ~/.ssh/my-devops-key"
+2. share public key with your manager (copy the key by opening it using cat ~/.ssh/my-devops-key.pub )through mail or any other source 
